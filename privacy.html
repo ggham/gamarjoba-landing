@@ -28,9 +28,13 @@
         h1 { font-size: 32px; margin-bottom: 8px; }
         .updated { color: #888; font-size: 14px; margin-bottom: 32px; }
         h2 { font-size: 20px; margin: 32px 0 12px; color: #466984; }
+        h3 { font-size: 16px; margin: 20px 0 8px; color: #333; }
         p, ul { margin-bottom: 16px; font-size: 15px; color: #444; }
         ul { padding-left: 24px; }
         li { margin-bottom: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 14px; }
+        th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #eee; color: #444; }
+        th { color: #466984; font-weight: 600; background: #f8f8fa; }
         footer {
             text-align: center;
             padding: 24px;
@@ -45,57 +49,197 @@
     <header><a href="/">Gamarjoba</a></header>
     <div class="content">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: February 17, 2026</p>
+        <p class="updated">Last updated: February 25, 2026</p>
 
-        <p>Gamarjoba ("we", "our", or "us") operates the Gamarjoba mobile application. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our app.</p>
+        <p>Gamarjoba ("we", "our", or "us") operates the Gamarjoba mobile application (the "App"). This Privacy Policy explains what personal data we collect, how we use it, who we share it with, and how you can exercise your rights.</p>
 
-        <h2>Information We Collect</h2>
+        <h2>1. Information We Collect</h2>
+
+        <h3>1.1 Account &amp; Profile Information</h3>
         <ul>
-            <li><strong>Account Information:</strong> Phone number, name, date of birth, gender, and profile photo.</li>
-            <li><strong>Location Data:</strong> With your permission, we collect your location to show nearby users and events.</li>
-            <li><strong>Media:</strong> Photos and videos you upload to share with other users.</li>
-            <li><strong>Chat Messages:</strong> Messages you send and receive through the app.</li>
-            <li><strong>Device Information:</strong> Device type, operating system, and push notification tokens.</li>
+            <li><strong>Phone number</strong> &mdash; used as your primary account identifier when you sign up via phone.</li>
+            <li><strong>Email address</strong> &mdash; collected when you sign in with Google, Facebook, or Apple.</li>
+            <li><strong>Social login IDs</strong> &mdash; a unique identifier from Google, Facebook, or Apple so we can link your account.</li>
+            <li><strong>Nickname, date of birth, gender, and bio</strong> &mdash; provided by you during profile creation.</li>
+            <li><strong>Profile photo</strong> &mdash; an image you upload as your public profile picture.</li>
         </ul>
 
-        <h2>How We Use Your Information</h2>
+        <h3>1.2 Location Data</h3>
         <ul>
-            <li>To provide and maintain the app's core features (nearby discovery, chat, events).</li>
-            <li>To send you push notifications about messages, friend requests, and events.</li>
-            <li>To verify your identity through our biometric verification process.</li>
-            <li>To moderate content and ensure community safety.</li>
+            <li>With your permission, we collect your <strong>precise GPS coordinates</strong> while the App is in the foreground.</li>
+            <li>Your location is updated approximately <strong>every 30 seconds</strong> and only the most recent location is stored.</li>
+            <li>Location data is used to show you nearby users, events, and venues.</li>
+            <li>Location updates <strong>stop automatically</strong> when the App is in the background.</li>
+            <li>Users whose location has not been updated for more than 10 minutes are automatically hidden from nearby results.</li>
         </ul>
 
-        <h2>Data Storage and Security</h2>
-        <p>Your data is stored on secure servers. Media files are stored using encrypted cloud storage. We implement industry-standard security measures to protect your personal information.</p>
-
-        <h2>Data Sharing</h2>
-        <p>We do not sell your personal data. We may share limited data with:</p>
+        <h3>1.3 Media &amp; Content</h3>
         <ul>
-            <li>Cloud service providers for hosting and storage.</li>
-            <li>Identity verification services for account verification.</li>
-            <li>Content moderation services for community safety.</li>
+            <li><strong>Photos and videos</strong> you upload to your profile, stories, reels, or chat.</li>
+            <li><strong>Stories</strong> are short videos (up to 90 seconds) that are <strong>automatically deleted after 24 hours</strong>.</li>
+            <li><strong>Chat messages</strong> (text, image, and video messages), including message status (sent, delivered, read), edit history, and emoji reactions.</li>
+            <li><strong>Likes</strong> on media content.</li>
         </ul>
 
-        <h2>Your Rights</h2>
+        <h3>1.4 Identity Verification Data</h3>
         <ul>
-            <li>Access, update, or delete your personal data through the app settings.</li>
-            <li>Disable location sharing at any time.</li>
-            <li>Control your profile visibility and notification preferences.</li>
-            <li>Request a copy of your data or account deletion by contacting us.</li>
+            <li>If you choose to verify your identity, we collect a <strong>facial selfie</strong> that is sent to our verification partner for biometric comparison.</li>
+            <li>We store your verification status and the selfie image for dispute resolution purposes.</li>
         </ul>
 
-        <h2>Data Retention</h2>
-        <p>We retain your data for as long as your account is active. When you delete your account, we will remove your personal data within 30 days.</p>
+        <h3>1.5 Device &amp; Technical Data</h3>
+        <ul>
+            <li><strong>Push notification token</strong> (Firebase Cloud Messaging) to deliver notifications to your device.</li>
+            <li><strong>Platform</strong> (Android or iOS) and <strong>language preference</strong>.</li>
+            <li>We do <strong>not</strong> collect device IDs, IMEI numbers, advertising identifiers, or hardware fingerprints.</li>
+        </ul>
 
-        <h2>Children's Privacy</h2>
-        <p>Gamarjoba is not intended for users under the age of 18. We do not knowingly collect data from children.</p>
+        <h3>1.6 Connection &amp; Social Data</h3>
+        <ul>
+            <li><strong>Connection requests</strong> ("Gamarjoba" requests) you send or receive, including any optional message. Pending requests expire automatically after 24 hours.</li>
+            <li><strong>Contact relationships</strong> formed when a request is accepted.</li>
+            <li><strong>Online/presence status</strong> and last-seen timestamps.</li>
+        </ul>
 
-        <h2>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+        <h3>1.7 Listings (Events &amp; Venues)</h3>
+        <ul>
+            <li>If you are a venue or event manager, we collect listing details you provide: name, description, type, region, location coordinates, dates, and cover images.</li>
+        </ul>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:info@gamarjobadotcom.com" style="color:#466984">info@gamarjobadotcom.com</a>.</p>
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+            <li><strong>Core features:</strong> Nearby user discovery, chat, events, venues, stories, and reels.</li>
+            <li><strong>Notifications:</strong> To send you push notifications about messages, connection requests, event updates, and content moderation results.</li>
+            <li><strong>Identity verification:</strong> To verify your identity for trust and safety purposes.</li>
+            <li><strong>Content moderation:</strong> To automatically screen uploaded images and videos for prohibited content (e.g., nudity) to keep the community safe.</li>
+            <li><strong>Location-based discovery:</strong> To show you users, events, and venues near your current location.</li>
+            <li><strong>Account management:</strong> To authenticate you, manage your preferences, and process account deletion requests.</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <p>We share limited data with the following third-party services to operate the App. <strong>We do not sell your personal data.</strong></p>
+
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Data Shared</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>Firebase (Google)</td>
+                <td>Phone number, push notification token</td>
+                <td>Phone authentication, push notifications</td>
+            </tr>
+            <tr>
+                <td>Didit</td>
+                <td>Facial selfie</td>
+                <td>Identity verification</td>
+            </tr>
+            <tr>
+                <td>SightEngine</td>
+                <td>Uploaded images and video frames</td>
+                <td>Automated content moderation</td>
+            </tr>
+            <tr>
+                <td>Cloudflare</td>
+                <td>Media files, HTTP request metadata</td>
+                <td>Content delivery (CDN), DDoS protection, media storage</td>
+            </tr>
+            <tr>
+                <td>Google / Facebook / Apple</td>
+                <td>OAuth tokens</td>
+                <td>Social login authentication</td>
+            </tr>
+        </table>
+
+        <h2>4. Data Storage &amp; Security</h2>
+        <ul>
+            <li>Your data is stored on servers located in <strong>Germany (EU)</strong> and media files are stored in <strong>Cloudflare R2 (EU jurisdiction)</strong>.</li>
+            <li>All data in transit is protected by <strong>HTTPS/TLS encryption</strong>.</li>
+            <li>Authentication uses industry-standard <strong>JWT tokens</strong>.</li>
+            <li>Database backups are created daily and retained for 30 days.</li>
+            <li>We do <strong>not</strong> use cookies, analytics trackers, or behavioral tracking tools in the App.</li>
+        </ul>
+
+        <h2>5. Data Retention</h2>
+
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Retention Period</th>
+            </tr>
+            <tr>
+                <td>Account &amp; profile data</td>
+                <td>Until you delete your account</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>Only the most recent update is stored; overwritten every 30 seconds</td>
+            </tr>
+            <tr>
+                <td>Stories</td>
+                <td>Automatically deleted after 24 hours</td>
+            </tr>
+            <tr>
+                <td>Connection requests</td>
+                <td>Automatically deleted after 24 hours if not accepted</td>
+            </tr>
+            <tr>
+                <td>Chat messages</td>
+                <td>Until you delete your account</td>
+            </tr>
+            <tr>
+                <td>Uploaded media</td>
+                <td>Until you delete the media or your account</td>
+            </tr>
+            <tr>
+                <td>Verification selfie</td>
+                <td>Until you delete your account</td>
+            </tr>
+            <tr>
+                <td>Push notification tokens</td>
+                <td>Automatically removed when invalid; deleted with account</td>
+            </tr>
+            <tr>
+                <td>Database backups</td>
+                <td>30 days (rolling)</td>
+            </tr>
+        </table>
+
+        <h2>6. Account Deletion</h2>
+        <p>You can delete your account at any time from the App settings. When you delete your account, we permanently remove:</p>
+        <ul>
+            <li>Your profile, preferences, and personal information</li>
+            <li>All media files you uploaded (photos, videos, stories) from both the database and cloud storage</li>
+            <li>Your device registrations and push notification tokens</li>
+            <li>Your chat messages, likes, and emoji reactions</li>
+            <li>Your connection requests and contact relationships</li>
+            <li>Your notifications</li>
+            <li>Any listings you created and their associated media</li>
+        </ul>
+        <p>Deletion is performed immediately. Residual copies in encrypted backups are purged within 30 days.</p>
+
+        <h2>7. Your Rights &amp; Controls</h2>
+        <p>You have the following rights and controls:</p>
+        <ul>
+            <li><strong>Profile visibility:</strong> Hide your profile from nearby discovery at any time.</li>
+            <li><strong>Location sharing:</strong> Disable location updates at any time via App settings or device permissions.</li>
+            <li><strong>Online status:</strong> Choose whether to show your online/last-seen status.</li>
+            <li><strong>Notification preferences:</strong> Control which types of push notifications you receive (messages, connection requests, nearby alerts).</li>
+            <li><strong>Access &amp; update:</strong> View and edit your personal data through the App.</li>
+            <li><strong>Deletion:</strong> Delete your account and all associated data from the App settings.</li>
+            <li><strong>Data request:</strong> Contact us to request a copy of your personal data.</li>
+        </ul>
+
+        <h2>8. Children's Privacy</h2>
+        <p>Gamarjoba is not intended for users under the age of 18. We do not knowingly collect personal data from anyone under 18. If we learn that we have collected data from a minor, we will delete the account and associated data promptly.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy on this page with a new "Last updated" date. Your continued use of the App after changes constitutes acceptance of the revised policy.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or wish to exercise your data rights, contact us at:</p>
+        <p><a href="mailto:info@gamarjobadotcom.com" style="color:#466984">info@gamarjobadotcom.com</a></p>
     </div>
     <footer>
         <a href="/">&larr; Back to Home</a>
